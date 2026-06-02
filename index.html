@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+
+    <!-- Enlace externo hacia la hoja de estilos -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fuente importada desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Encabezado principal con logo y navegación -->
+    <header>
+        <div class="container header-container">
+
+            <!-- Logo representado con una imagen placeholder -->
+            <div class="logo">
+                <img src="https://picsum.photos/50/50" alt="Logo">
+            </div>
+
+            <!-- Menú de navegación horizontal -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Sección principal Hero con presentación personal -->
+        <section class="hero" id="inicio">
+
+            <div class="container hero-container">
+
+                <!-- Columna izquierda con información introductoria -->
+                <div class="hero-text">
+                    <h1>Hola, soy Gabriela Pinchao</h1>
+
+                    <h2>Multimedia y Producción Audiovisual</h2>
+
+                    <p>
+                        Gabriela Pinchao dolor sit amet consectetur adipisicing elit. 
+                        Officia nemo architecto modi magni dignissimos earum.
+                    </p>
+
+                    <!-- Botón principal para dirigir hacia proyectos -->
+                    <a href="#proyectos" class="btn">
+                        Ver proyectos
+                    </a>
+                </div>
+
+                <!-- Columna derecha con imagen de perfil circular -->
+                <div class="hero-image">
+                    <img src="https://picsum.photos/400/400" alt="Foto de perfil">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Sección destinada a mostrar proyectos destacados -->
+        <section class="projects" id="proyectos">
+
+            <div class="container">
+
+                <h2 class="section-title">Mis Proyectos</h2>
+
+                <!-- Contenedor flex para organizar tarjetas -->
+                <div class="projects-grid">
+
+                    <!-- Tarjeta individual de proyecto -->
+                    <article class="project-card">
+
+                        <img src="https://picsum.photos/350/250?random=1" alt="Proyecto 1">
+
+                        <div class="project-content">
+                            <h3>Gabriela Project</h3>
+
+                            <p>
+                                Gabriela Pinchao dolor sit amet consectetur adipisicing elit. 
+                                Doloribus, beatae.
+                            </p>
+                        </div>
+
+                    </article>
+
+                    <article class="project-card">
+
+                        <img src="https://picsum.photos/350/250?random=2" alt="Proyecto 2">
+
+                        <div class="project-content">
+                            <h3>Gabriela Studio</h3>
+
+                            <p>
+                                Gabriela Pinchao dolor sit amet consectetur adipisicing elit. 
+                                Doloribus, beatae.
+                            </p>
+                        </div>
+
+                    </article>
+
+                    <article class="project-card">
+
+                        <img src="https://picsum.photos/350/250?random=3" alt="Proyecto 3">
+
+                        <div class="project-content">
+                            <h3>Gabriela Motion</h3>
+
+                            <p>
+                                Gabriela Pinchao dolor sit amet consectetur adipisicing elit. 
+                                Doloribus, beatae.
+                            </p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Sección de habilidades personales -->
+        <section class="skills" id="sobre-mi">
+
+            <div class="container">
+
+                <h2 class="section-title">Habilidades</h2>
+
+                <!-- Distribución horizontal de habilidades -->
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <h3>Fotografia</h3>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Edicion de Fotografía</h3>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Diseño de Periodicos Digitales</h3>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Manejo de Camaras de Fotografía</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Sección de contacto con información y formulario -->
+        <section class="contact" id="contacto">
+
+            <div class="container contact-container">
+
+                <!-- Columna izquierda con mensaje motivacional -->
+                <div class="contact-text">
+
+                    <h2>¿Tienes un proyecto en mente?</h2>
+
+                    <p>
+                        Gabriela Pinchao dolor sit amet consectetur adipisicing elit. 
+                        Repellat, dolore. Quidem saepe porro reiciendis deserunt 
+                        laudantium dolorum dignissimos.
+                    </p>
+
+                </div>
+
+                <!-- Formulario de contacto -->
+                <div class="contact-form">
+
+                    <form>
+
+                        <input type="text" placeholder="Nombre">
+
+                        <input type="email" placeholder="Correo">
+
+                        <textarea placeholder="Mensaje"></textarea>
+
+                        <button type="submit" class="btn">
+                            Enviar mensaje
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página con redes sociales -->
+    <footer>
+
+        <div class="container footer-container">
+
+            <p>© 2026 Gabriela Pinchao. Todos los derechos reservados.</p>
+
+            <!-- Redes sociales organizadas horizontalmente -->
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+                <a href="#">GitHub</a>
+                <a href="#">Behance</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
