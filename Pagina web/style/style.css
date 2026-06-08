@@ -14,7 +14,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #ffffff;
+    color: #333333; /* Corregido: texto oscuro para leer sobre fondo claro */
     background-color: #F4F4F4;
 }
 
@@ -88,6 +88,7 @@ header{
 .hero{
     background-color: #B8336A;
     padding: 100px 0;
+    color: #ffffff; /* Texto blanco solo en esta sección oscura */
 }
 
 /* 
@@ -165,6 +166,7 @@ header{
     border-radius: 50%;
     object-fit: cover;
     border: 6px solid #ffffff;
+    box-shadow: 0 10px 30px rgba(51, 49, 49, 0.25); /* Corregido: sombra aquí, no anidada */
 }
 
 /* 
@@ -217,7 +219,7 @@ section{
    Elevación visual al pasar el cursor
 */
 .project-card:hover{
-    transform: translateY(-8px);
+    transform: translateY(-8px) scale(1.03); /* Corregido sintaxis de scale */
 }
 
 /* 
@@ -254,7 +256,7 @@ section{
 }
 
 /* 
-   Tarjetas simples de habilidades
+   Tarjetas simples de habilidades - Estilo unificado y sin duplicados
 */
 .skill-card{
     background-color: #ffffff;
@@ -265,6 +267,8 @@ section{
     text-align: center;
     font-weight: 600;
     transition: 0.3s;
+    border-bottom: 5px solid #7D8CC4;
+    border: 3px dashed #FFC0CB; /* Unificado: mantengo ambos estilos combinados */
 }
 
 /* 
@@ -370,7 +374,7 @@ footer{
 }
 
 /* 
-   Estilos visuales de enlaces sociales
+   Estilos visuales para enlaces sociales
 */
 .social-links a{
     color: #ffffff;
@@ -389,7 +393,6 @@ footer{
    Adaptación responsive para pantallas pequeñas
 */
 @media(max-width: 900px){
-
     .hero-container,
     .contact-container{
         flex-direction: column;
